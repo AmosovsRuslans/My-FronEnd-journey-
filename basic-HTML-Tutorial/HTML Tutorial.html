@@ -2,15 +2,19 @@
 <html lang="en"> <!--element is the root element of an HTML page, to declare the language of the Web page.-->
 <head>           <!--element contains meta information about the HTML page-->
     <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ruslans Amosovs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myFirst_html</title> <!--element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
+    <title>basic_html</title> <!--element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> <!--favicon-->
 </head>
-    <body> <!--element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
-        <h1>Hello world! My name is Ruslans and this is my basic html</h1> <!--element defines a large heading-->
+    <body style="background-color:rgb(224, 206, 199);"> <!--element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
+        <h1 style="background-color:Tomato;">Hello world! My name is Ruslans and this is my basic html</h1> <!--element defines a large heading-->
         <hr> <!--horizontal_line-->
-        <h1>HTML is the standard markup language for Web pages.</h1>
+        <h1 style="background-color:rgb(30, 184, 16);">HTML is the standard markup language for Web pages.</h1>
         <hr>
-        <h2>What is HTML?</h2>
+        <h2 style="color:DodgerBlue;">What is HTML?</h2>
             <p>HTML stands for Hyper Text Markup Language</p> <!--p element defines a paragraph-->
             <p>HTML is the standard markup language for creating Web pages</p>
             <p>HTML describes the structure of a Web page</p>
@@ -18,21 +22,21 @@
             <p>HTML elements tell the browser how to display the content</p>
             <p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
         <hr>
-        <h2>HTML Attributes</h2>
+        <h2 style="color:DodgerBlue;">HTML Attributes</h2>
             <p>HTML attributes provide additional information about HTML elements.</p>
             <p>The .a. tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
                 <a href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a> <!--example-->
             <p>The .img. tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
-                <img src=".jpg"> <!--example-->
+                <img src=".jpg."> <!--example-->
             <p>Tip: It is almost always best to use relative URLs. They will not break if you change domain.</p>
             <p>The width and height Attributes</p>
-                <img src="frontend.jpg" width="100" height="100"> <!--example-->
+                <img src="assets/frontend.jpg" width="100" height="100"> <!--example-->
             <p>The required alt attribute for the .img. tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</p>
                 <img src="img_girl.jpg" alt="Girl with a jacket"> <!--example-->
             <p>The style attribute is used to add styles to an element, such as color, font, size, and more.</p>
             <p style="color:red;">This is a red paragraph.</p> <!--example-->
         <hr>
-        <h2>HTML Paragraphs</h2>
+        <h2 style="color:DodgerBlue;">HTML Paragraphs</h2>
             <p>The title attribute defines some extra information about an element. The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
             <p title="I'm a tooltip">This is a paragraph.</p> <!--example-->
                 <p>This is<br>a paragraph<br>with line breaks.</p> <!--br line breaks-->
@@ -46,8 +50,10 @@
               
                 Oh, bring back my Bonnie to me.
               </pre>
+              <a href="https://www.w3schools.com/html/html_paragraphs.asp">All about HTML Paragraphs</a>
+
         <hr>
-        <h2>HTML Formatting Elements</h2>
+        <h2 style="color:DodgerBlue;">HTML Formatting Elements</h2>
             <pre> <!--example-->
                 <b> - Bold text </b>
                 <strong> - Important text </strong>
@@ -60,8 +66,9 @@
                 <sub> - Subscript text </sub>
                 <sup> - Superscript text </sup>
             </pre>
+            <a href="https://www.w3schools.com/html/html_formatting.asp">All about HTML Text Formatting</a>
         <hr>
-        <h2>HTML Quotation and Citation Elements</h2>
+        <h2 style="color:DodgerBlue;">HTML Quotation and Citation Elements</h2>
             <pre> <!--example-->
                 <abbr>Defines an abbreviation or acronym</abbr>
                 <address>Defines contact information for the author/owner of a document</address>
@@ -70,8 +77,9 @@
                 <cite>Defines the title of a work</cite>
                 <q>Defines a short inline quotation</q>
             </pre>
+            <a href="https://www.w3schools.com/html/html_quotation_elements.asp">All about HTML Quotation and Citation Elements</a>
         <hr>
-        <h2>HTML Links</h2>
+        <h2 style="color:DodgerBlue;">HTML Links</h2>
                 <a href="https://www.w3schools.com/html/html_links.asp">All about links</a>
             <p>HTML Links - The target Attribute</p>
             <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
@@ -88,5 +96,162 @@
                 <a href="mailto:someone@example.com">Send email</a> <!--example-->
             <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
                 <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
-                    
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML Tables</h2>
+            <p>A table in HTML consists of table cells inside rows and columns.</p>
+        <hr>
+                <table> <!--example-->
+                    <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                    </tr>
+                    <tr>
+                    <td>Alfreds</td>
+                    <td>Maria</td>
+                    <td>Germany</td>
+                    </tr>
+                    <tr>
+                    <td>Centro</td>
+                    <td>Francisco</td>
+                    <td>Mexico</td>
+                    </tr>
+                </table>
+        <hr>
+            <p>Table Cells</p>
+            <p>Each table cell is defined by a .td. and a ./td. tag.</p>
+            <p>td stands for table data.</p>
+            <p>Everything between .td. and ./td. are the content of the table cell.</p>
+        <hr>
+                <table> <!--example-->
+                    <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    </tr>
+                </table>
+        <hr>
+            <p>Table Rows</p>
+            <p>Each table row starts with a .tr. and ends with a ./tr. tag.</p>
+            <p>tr stands for table row.</p>
+        <hr>
+                <table> <!--example--> 
+                    <tr>
+                    <td>Emil</td>
+                    <td>Tobias</td>
+                    <td>Linus</td>
+                    </tr>
+                    <tr>
+                    <td>16</td>
+                    <td>14</td>
+                    <td>10</td>
+                    </tr>
+                </table>
+        <hr>
+            <p>Table Headers</p>
+            <p>Sometimes you want your cells to be table header cells. In those cases use the .th. tag instead of the .td. tag:</p>
+            <p>th stands for table header.</p>
+        <hr>
+                <table> <!--example-->
+                    <tr>
+                    <th>Person 1</th>
+                    <th>Person 2</th>
+                    <th>Person 3</th>
+                    </tr>
+                    <tr>
+                    <td>Emil</td>
+                    <td>Tobias</td>
+                    <td>Linus</td>
+                    </tr>
+                    <tr>
+                    <td>16</td>
+                    <td>14</td>
+                    <td>10</td>
+                    </tr>
+                </table>
+        <hr>
+            <p><a href="https://www.w3schools.com/html/html_tables.asp">All about tables</a></p>
+            <p><a href="https://www.w3schools.com/html/html_table_borders.asp">All about table borders</a></p>
+            <p><a href="https://www.w3schools.com/html/html_table_sizes.asp">All about table sizes</a></p>
+            <p><a href="https://www.w3schools.com/html/html_table_headers.asp">All about table headers</a></p>
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML lists</h2>
+            <p>Unordered HTML List</p>
+                <ul> <!--example-->
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+        <hr>
+            <p>Ordered HTML List</p>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+        <hr>
+            <p>HTML Description Lists</p>
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- white cold drink</dd>
+                </dl>
+            <a href="https://www.w3schools.com/html/html_lists.asp">All about HTML Lists</a>
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML Block and Inline Elements</h2>
+            <p>Every HTML element has a default display value, depending on what type of element it is.</p>
+            <p>The two most common display values are block and inline.</p>
+            <p><a href="https://www.w3schools.com/html/html_blocks.asp">All about HTML Block and Inline Elements</a></p>
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML Div Element</h2>
+            <p>The .div. element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.</p>
+        <hr>
+                Lorem Ipsum <div>I am a div</div> dolor sit amet. <!--example-->
+        <hr>
+            <p>.div. as a container</p>
+        <hr>
+                <div> <!--example-->
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                </div>
+        <hr>
+            <p><a href="https://www.w3schools.com/html/html_div.asp">All about DIV Element</a></p>
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML class Attribute</h2>
+            <p>The HTML class attribute is used to specify a class for an HTML element.</p>
+            <p>Multiple HTML elements can share the same class.</p>
+            <p>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</p>
+            <p><a href="https://www.w3schools.com/html/html_classes.asp">All about HTML class Attribute</a></p>
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML id Attribute</h2>
+            <p>The HTML id attribute is used to specify a unique id for an HTML element.</p>
+            <p>The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id</p>
+            <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}</p>
+            <p style="color:red">Difference Between Class and ID</p>
+            <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+            <p><a href="https://www.w3schools.com/html/html_id.asp">All about HTML id Attribute</a></p>
+        <hr>
+            
+
+
+
+                
+
+
+
+            
+
+
+            
+
+
+    <footer>
+        <p>Author: Ruslans Amosovs</p>
+        <p><a href="mailto:amosovs.ruslan@gmail.com">Send email</a></p>
+        <p>&copy; 2024 My HTML tutorial. All rights reserved.</p>
+        <p>&#128513;</p>
+    </footer>
+    </body>         
 </html>
