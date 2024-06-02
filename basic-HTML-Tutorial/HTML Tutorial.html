@@ -233,20 +233,121 @@
             <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
             <p><a href="https://www.w3schools.com/html/html_id.asp">All about HTML id Attribute</a></p>
         <hr>
-            
+        <h2 style="color:DodgerBlue;">HTML Iframes</h2> <!--Iframes-->
+            <p>An HTML iframe is used to display a web page within a web page.</p>
+            <p>The HTML .iframe. tag specifies an inline frame</p>
+            <p>An inline frame is used to embed another document within the current HTML document.</p>
+            <p><iframe src="HTML Tutorial.html" height="200" width="300" title="Iframe Example"></iframe></p>
+        <hr>
+        <h2 style="color:DodgerBlue;">HTML Forms</h2> <!--HTML forms-->
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+            <p>The <input type="text"> defines a single-line input field for text input</p> <!--example-->
+                <form> <!--example-->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+            <p style="color:rgb(252, 3, 3);">Radio Buttons</p>
+            <p>Choose your favorite Web language:</p>
 
-
-
-                
-
-
-
-            
-
-
-            
-
-
+                <form> <!--example-->
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </form>
+            <p style="color:rgb(252, 3, 3);">Checkboxes</p>
+                <form> <!--example-->
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label>
+                </form>
+            <p style="color:rgb(252, 3, 3);">The Submit Button</p>
+                <form action="/action_page.php"> <!--example-->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            <p style="color:rgb(252, 3, 3);">The Name Attribute for .input.</p>
+                <form action="/action_page.php"> <!--example-->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" value="John"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            <p style="color:rgb(252, 3, 3);">The .select. Element</p>
+                <label for="cars">Choose a car:</label> <!--example-->
+                <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                </select>
+            <p style="color:rgb(252, 3, 3);">Visible Values</p>
+                <label for="cars">Choose a car:</label> <!--example-->
+                <select id="cars" name="cars" size="3">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                </select>
+            <p style="color:rgb(252, 3, 3);">Multiple Selections</p>
+                <label for="cars">Choose a car:</label> <!--example-->
+                <select id="cars" name="cars" size="4" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                </select>
+            <p style="color:rgb(252, 3, 3);">The .textarea. Element</p> <!--example-->
+                <textarea name="message" rows="10" cols="30">
+                    Textarea
+                </textarea>
+            <p style="color:rgb(252, 3, 3);">The .button. Element</p>
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button> <!--example-->
+            <p style="color:rgb(252, 3, 3);">The .fieldset. and .legend. Elements</p>
+                <form action="/action_page.php">
+                    <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            <p style="color:rgb(252, 3, 3);">The .datalist. Element</p>
+                <form action="/action_page.php"> <!--example-->
+                    <input list="browsers">
+                    <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                    </datalist>
+                </form>
+            <p style="color:rgb(252, 3, 3);">The .output. Element</p> <!--example-->
+                <form action="/action_page.php"
+                    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    0
+                    <input type="range"  id="a" name="a" value="50">
+                    100 +
+                    <input type="number" id="b" name="b" value="50">
+                    =
+                    <output name="x" for="a b"></output>
+                    <br><br>
+                    <input type="submit">
+                    </form>
+            <p><a href="https://www.w3schools.com/html/html_forms.asp">All about Forms and Input atributes</a></p>
+            <hr>
     <footer>
         <p>Author: Ruslans Amosovs</p>
         <p><a href="mailto:amosovs.ruslan@gmail.com">Send email</a></p>
