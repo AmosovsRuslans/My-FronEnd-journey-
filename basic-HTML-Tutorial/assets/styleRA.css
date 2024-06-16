@@ -1,0 +1,29 @@
+body {
+    color: white;
+    background-color: black;
+}
+* {
+    border: solid 1px red! important;
+}
+
+p {
+    color: deeppink;
+}
+
+h1 {
+    color:aquamarine;
+}
+
+h2 {
+    color:rgb(20, 220, 143)
+}
+
+.title {
+    color: darksalmon;
+    font-size: 30px;
+}
+
+#p1 {
+color: deepskyblue;
+font-size: medium;
+}
